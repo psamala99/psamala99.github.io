@@ -1,19 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
 </head>
 <body>
 
-<h1>My Website</h1>
-<p>A website Created by me.</p>
+<div class="container">
+  <img src="background.jpg" alt="" width="1520" height="300">
+  <!-- <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div> -->
+  <div class="centered" style="color:white;font-size:60px;"> Welcome To My Website!</div> 
+</div>
+
+<!-- <h1 class="centered"> About Me</h1> -->
+
+<style>
+.content {
+  display: flex;
+}
+
+.content img {
+  margin-right: 60px;
+  display: block;
+}
+
+.content h3,
+.content p {margin: 0;}
+</style>
+
+
+<div class="content">
+  <img src="me.jpg" width="667" height="500" style = "position:relative; Right:-30px;Top: 100px;">
+  <div class="text" style = "position:relative; bottom: -200px;">
+    <h1><strong>About Me</strong></h1>
+    <p style="color:black;font-size:20px;">Hello everyone! I am a graduate student in the Data Science Program, and I am interested in working at the intersection of data science and health care to improve patient outcomes. Some of my favorite classes so far were Introduction to Data Science and Machine Learning 1. Apart from my professional interests, I love exploring Washington DC to find the best coffees, pastries, and Mexican food! </p>
+  </div>
+</div>
+
+
+
 
 </body>
-</html>
+</html> 
+
+
+

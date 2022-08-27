@@ -1,58 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
 </style>
 </head>
-<body>
+<body style="background: linear-gradient(#10ACBE, #AFEEEE, #AA2784,#AFEEEE,#10ACBE);; overflow-x:hidden">
+  <h1 class="centered" style="color:black;font-size:50px; position:relative; left:500px; Top: 60px;">Welcome to my Portfolio</h1>
 
-<div class="container">
-  <img src="background.jpg" alt="" width="1650" height="300" style = "position:relative; Right:10px;">
-  <!-- <div class="bottom-left">Bottom Left</div>
-  <div class="top-left">Top Left</div>
-  <div class="top-right">Top Right</div>
-  <div class="bottom-right">Bottom Right</div> -->
-  <div class="centered" style="color:white;font-size:50px; position:relative; left:750px; Top: -175px;"> Welcome To My Website!</div> 
+
 </div>
 
-<!-- <h1 class="centered"> About Me</h1> -->
+
 
 <style>
 .content {
@@ -73,7 +33,106 @@
   <img src="me.jpg" width="667" height="500" style = "position:relative; Right:-20px;Top: 100px;">
   <div class="text" style = "position:relative; bottom: -200px;">
     <h1><strong>About Me</strong></h1>
-    <p style="color:black;font-size:20px;">Hello everyone! I am a graduate student in the Data Science Program, and I am interested in working at the intersection of data science and health care to improve patient outcomes. Some of my favorite classes so far were Introduction to Data Science and Machine Learning 1. Apart from my professional interests, I love exploring Washington DC to find the best coffees, pastries, and Mexican food! </p>
+    <p style="color:black;font-size:20px;">Hello everyone! I am a graduate student in the Data Science Program at The George Washington University, and I am interested in working at the intersection of data science and health care to improve patient outcomes. Some of my favorite classes so far were Introduction to Data Science and Machine Learning 1. Apart from my professional interests, I love exploring Washington DC to find the best coffees, pastries, and Mexican food! </p>
+  </div>
+</div>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+<div class="container">
+  <div class="centered" style="color:black;font-size:20px; position:relative; left:680px; Top: 205px;"> <h1><strong>Projects</strong></h1>
+  </div> 
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="tumor.jpg" alt="Snow" style="width:70%; position:relative; Right:-70px; Top: 195px;">
+    <h3 style="width:70%; position:relative; Right:-70px; Top: 205px;"><strong><a href="https://github.com/psamala99/CNN-model/blob/main/CNN5.py" style="color: black">Image Processing to Detect Brain Tumors</a></strong></h3>
+    <figcaption style="width:70%; position:relative; Right:-70px; Top: 195px;"> Trained a CNN model to identify tumors in brain scan images.
+  </div>
+  <div class="column">
+    <img src="plane.jpeg" alt="Forest" style="width:70%; position:relative; Right:-70px; Top: 195px;">
+    <h3 style="width:70%; position:relative; Right:-70px; Top: 205px;"><strong><a href="https://github.com/psamala99/6103-project/blob/main/Final%20Code%20and%20technical%20Part%202.py" style="color: black">Predicting Airline Prices</a></strong></h3>
+    <figcaption style="width:70%; position:relative; Right:-70px; Top: 195px;">Predicted airline ticket prices by visualizing and analyzing airline data. </figcaption>
+  </div>
+  <div class="column">
+    <img src="wine.jpeg" alt="Mountains" style="width:70%; position:relative; Right:-70px; Top: 195px;">
+    <h3 style="width:70%; position:relative; Right:-70px; Top: 205px;"><strong><a href="https://github.com/psamala99/Machine-Learning-I-/blob/main/Project.ipynb" style="color: black">Modeling Wine Quality</a></strong></h3>
+    <figcaption style="width:70%; position:relative; Right:-70px; Top: 195px;"> Used logistic regression to detemine which factors influence wine quality. </figcaption>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="centered" style="color:black;font-size:20px; position:relative; left:710px; Top: 305px;"> <h3><strong>Contact</strong></h3>
+  </div> 
+</div>
+
+<style>
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+
+
+<div class="row">
+  <div class="column2">
+    <p style="width:70%; position:relative; Right:-530px; Top: 320px;"><a href="https://www.linkedin.com/in/pavani-samala/" style="color: black">LinkedIn</a><br><br><br><br><br><br></p>
+  </div>
+  <div class="column2">
+    <span class="dot" style=" position:relative; Right:-335px; Top: 335px;"></span>
+  </div>
+  <div class="column2">
+    <p style="width:70%; position:relative; Right:-77px; Top: 320px;">Phone:484-631-5616</a><br><br><br><br><br><br></p>
+  </div>
+  <div class="column2">
+    <span class="dot" style=" position:relative; Right:45px; Top: 335px;"></span>
+  </div>
+  <div class="column2">
+    <p style="width:70%; position:relative; Right:290px; Top: 320px;"><a href="mailto:psamala54@gwmail.gwu.edu" style="color: black">Email</a><br><br><br><br><br><br></p>
   </div>
 </div>
 
